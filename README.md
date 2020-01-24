@@ -1,2 +1,3 @@
-# geoinfo
-Curso de Verão em Geoinformática e Geospatial Data Science
+# Curso de Verão em Geoinformática e Geospatial Data Science
+
+
