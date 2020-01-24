@@ -18,9 +18,10 @@ Esse repositório está sendo preparado para fornecer os materiais da trilha de 
 
 ## Software Livre
 
-- [QGIS](qgis)
+- [QGIS](qgis/README.md)
 
-- Docker
+- [Docker](docker/README.md)
 
 - PostgreSQL e PostGIS
+
 
