@@ -18,7 +18,7 @@ Esse repositório está sendo preparado para fornecer os materiais da trilha de 
 
 ## Software Livre
 
-- [QGIS]()
+- [QGIS](qgis)
 
 - Docker
 
