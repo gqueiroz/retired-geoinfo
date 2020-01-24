@@ -13,10 +13,10 @@ As atividades do curso encontram-se organizadas em duas trilhas de atividades:
 
 Os participantes deverão levar seus próprios notebooks para realização das atividades práticas.
 
-Esse repositório está sendo preparado para fornecer os materiais da trilha de Geoinformática, bem como as instruções de preparação dos ambientes de trabalhos práticos.
+Esse repositório está sendo preparado para fornecer os materiais da trilha de **Geoinformática**, bem como as instruções de preparação dos ambientes de trabalhos práticos.
 
 
-## Software Livre
+## Software Livre - Instalação
 
 - [QGIS](qgis/README.md)
 
