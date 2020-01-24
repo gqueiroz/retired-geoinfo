@@ -30,3 +30,4 @@ A instalação do Docker em ambiente MacOS é apresentada nas etapas abaixo.
 ![](img/mac9.png)
 
 > Para acessar imagens a partir do Docker Hub é necessário realizar o login.
+
