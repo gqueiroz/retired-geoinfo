@@ -22,6 +22,5 @@ Esse repositório está sendo preparado para fornecer os materiais da trilha de 
 
 - [Docker](docker/README.md)
 
-- PostgreSQL e PostGIS
 
 
