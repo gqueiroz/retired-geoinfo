@@ -2,8 +2,25 @@
 
 
 O Curso de Verão em Geoinformática e Geospatial Data Science é direcionado a alunos de graduação das áreas de computação e afins, tendo em vista a disseminação de conhecimento, inovação e de pesquisas acadêmicas realizadas pelos grupos de Geoinformática e Data Science do INPE. Em 2020 o curso será realizado na sede do Instituto Nacional de Pesquisas Espaciais (INPE), em São José dos Campos, entre os dias 27 e 31 de Janeiro, no período de 08:30 às 16:30.
+
+
 As atividades do curso encontram-se organizadas em duas trilhas de atividades:
-• Geoinformática: onde serão abordados conceitos práticos sobre dados geográficos, sistemas de informação geográficas, bancos de dados geográficos, além de serviços web e visualização de dados com ênfase em dados geográficos.
-• Geospatial Data Science: onde serão abordados conceitos práticos sobre Data Science, pesquisa reprodutível, análise exploratória de dados e introdução ao aprendizado de máquina, com ênfase em dados geográficos.
-O curso é gratuito e possui um número limitado de vagas. As inscrições estarão abertas até o dia 14 de Janeiro de 2020. Para participar do Curso de Verão em Geoinformática e Geospatial Data Science você deverá realizar a sua inscrição de forma on-line em https://forms.gle/dM2JK2vtKVZRAXqU6 (veja QRCode abaixo). Também será necessário enviar o histórico escolar. A comissão organizadora irá divulgar a lista dos alunos selecionados entre os dias 16 e 17 de Janeiro.
-Os participantes deverão levar seus próprios notebooks para realização das atividades práticas. Informações sobre os softwares e dados a serem utilizados serão repassadas aos participantes posteriormente. Serão utilizados apenas sistemas livres e de código fonte aberto.
+
+- **Geoinformática:** onde serão abordados conceitos práticos sobre dados geográficos, sistemas de informação geográficas, bancos de dados geográficos, além de serviços web e visualização de dados com ênfase em dados geográficos.
+
+- **Geospatial Data Science:** onde serão abordados conceitos práticos sobre Data Science, pesquisa reprodutível, análise exploratória de dados e introdução ao aprendizado de máquina, com ênfase em dados geográficos.
+
+
+Os participantes deverão levar seus próprios notebooks para realização das atividades práticas.
+
+Esse repositório está sendo preparado para fornecer os materiais da trilha de Geoinformática, bem como as instruções de preparação dos ambientes de trabalhos práticos.
+
+
+## Software Livre
+
+- [QGIS]()
+
+- Docker
+
+- PostgreSQL e PostGIS
+
