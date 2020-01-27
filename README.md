@@ -16,11 +16,23 @@ Os participantes deverão levar seus próprios notebooks para realização d
 Esse repositório está sendo preparado para fornecer os materiais da trilha de **Geoinformática**, bem como as instruções de preparação dos ambientes de trabalhos práticos.
 
 
+## Aulas
+
+- [Tópicos](aulas/README.md)
+
+
+## Dados
+
+- [Dados Vetoriais](dados/README.md)
+
+
 ## Software Livre - Instalação
 
 - [QGIS](qgis/README.md)
 
 - [Docker](docker/README.md)
+
+- [PostgreSQL e PostGIS](postgresql/README.md)
 
 
 
