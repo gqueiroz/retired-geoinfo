@@ -18,6 +18,9 @@
 
 
 - **Consultas Espaciais:**
+  - [Slides da Aula (pdf)](./pdf/consultas_espaciais.pdf)
+  
+  - [Trechos de Código da Aula (Markdown)](./md/consultas_espaciais.md)
 
 
 - **Programação do Lado Servidor:**
