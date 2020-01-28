@@ -8,6 +8,13 @@
     
 
 - **Tipos Geométricos e Operações Espaciais:**
+  - [Slides da Aula (pdf)](./pdf/tipos_operacoes_espaciais.pdf)
+
+  - Notas de Aula (pdf)
+
+  - [Trechos de Código da Aula (Markdown)](./md/tipos_operacoes_espaciais.md)
+
+  - [Jupyter Notebook](./ipynb/tipos_operacoes_espaciais.ipynb)
 
 
 - **Consultas Espaciais:**
@@ -17,6 +24,10 @@
   
 
 - **Geo Web Services:**
+
+
+- **Sistemas de Bancos de Dados Matriciais:**
+  - [Slides da Aula (pdf)](./pdf/sgbdm-scidb.pdf)
 
 
 - **Cubos de Dados de Observação da Terra:**
