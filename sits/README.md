@@ -5,6 +5,7 @@ Pré Requisito:
 
 Atualmente, há uma imagem pré-configurada com o RStudio e o pacote sits disponível no DockerHub. Abaixo, serão apresentadas as etapas para realizar o download e a execução dessa imagem usando o Docker.
 
+## Processo de download e execução da imagem rstudio-sits
 
 **1.** Inicialmente, é necessário baixar a imagem **rstudio-sits:0.9.5** para a máquina local usando o seguinte comando abaixo em um terminal Linux ou Prompt de Comando do Windows:
 
