@@ -56,7 +56,7 @@ Pronto! O tomcat foi configurado!
 
 Para lançar o Apache Tomcat, utilize o seguinte comando:
 ```shell
-~/tomcat/apache-tomcat-8.5/bin/xxxx.sh
+~/tomcat/apache-tomcat-8.5/bin/startup.sh
 ```
 
 
