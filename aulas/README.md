@@ -26,7 +26,9 @@
 - **Programação do Lado Servidor:**
   - [Notas de Aula (pdf)](./pdf/bdgeo.pdf)
   
-  - Trechos de Código da Aula (Markdown)
+  - [Trechos de Código PL/pgSQL](./md/pl_pgsql.md)
+
+  - [Trechos de Código Triggers](./md/triggers.md)
   
 
 - **Geo Web Services:**
