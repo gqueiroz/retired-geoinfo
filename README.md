@@ -36,5 +36,7 @@ Esse repositório está sendo preparado para fornecer os materiais da trilha de 
 
 - [Apache Tomcat](tomcat/README.md)
 
+- [GeoServer](geoserver/README.md)
+
 
 
