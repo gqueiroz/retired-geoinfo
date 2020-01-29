@@ -10,7 +10,7 @@
 - **Tipos Geométricos e Operações Espaciais:**
   - [Slides da Aula (pdf)](./pdf/tipos_operacoes_espaciais.pdf)
 
-  - Notas de Aula (pdf)
+  - [Notas de Aula (pdf)](./pdf/bdgeo.pdf)
 
   - [Trechos de Código da Aula (Markdown)](./md/tipos_operacoes_espaciais.md)
 
@@ -24,9 +24,13 @@
 
 
 - **Programação do Lado Servidor:**
+  - [Notas de Aula (pdf)](./pdf/bdgeo.pdf)
+  
+  - Trechos de Código da Aula (Markdown)
   
 
 - **Geo Web Services:**
+  - Slides da Aula (pdf)
 
 
 - **Sistemas de Bancos de Dados Matriciais:**
@@ -34,9 +38,11 @@
 
 
 - **Cubos de Dados de Observação da Terra:**
+  - Slides da Aula (pdf)
 
 
 - **Satellite Image Time Series (SITS):**
+  - Slides da Aula (pdf)
 
 
 # Material Auxiliar
