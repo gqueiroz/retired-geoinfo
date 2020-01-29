@@ -12,7 +12,7 @@ As bases de dados oficiais encontram-se disponíveis em portais Web das seguinte
 
 Os seguintes conjuntos de dados encontram-se disponíveis na página do curso, codificados em UTF-8, projeção geográfica `LAT/LONG` e sistema geodésico de referência `WGS84` :
 
-  - `focos_2019.zip`: Ocorrências de fogo na vegetação entre o dia 01 de janeiro e 25 de janeiro de 2019. Versão extraída diretamente do BDQueimadas, com 38.793 feiçoes, com geometrias do tipo `Point`.
+  - `focos_2020.zip`: Ocorrências de fogo na vegetação entre o dia 01 de janeiro e 25 de janeiro de 2020. Versão extraída diretamente do BDQueimadas, com 38.793 feiçoes, com geometrias do tipo `Point`.
 
 
 ### Divisão Político-Administrativa Brasileira
