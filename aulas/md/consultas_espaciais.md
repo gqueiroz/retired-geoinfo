@@ -49,24 +49,59 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f municipios.sql
 
 
 **2.** Terras Indígenas:
+```bash
+shp2pgsql -c -g "geom" -s 4674 -i -I -t "2D" -W UTF-8 terras_indigenas.shp public.terras_indigenas > terras_indigenas.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f terras_indigenas.sql
+```
 
 
 **3.** Unidades de Conservação:
+```bash
+shp2pgsql -c -g "geom" -s 4674 -i -I -t "2D" -W UTF-8 unidades_conservacao.shp public.unidades_conservacao > unidades_conservacao.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f unidades_conservacao.sql
+```
 
 
 **4.** Focos de Queimada (2019):
+```bash
+shp2pgsql -c -g "geom" -s 4326 -i -I -t "2D" -W UTF-8 focos_2019.shp public.focos_2019 > focos_2019.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f focos_2019.sql
+```
 
 
 **5.** Focos de Queimada (2017-2018):
+```bash
+shp2pgsql -c -g "geom" -s 4326 -i -I -t "2D" -W UTF-8 focos_2017_2018.shp public.focos > focos.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f focos.sql
+```
 
 
 **6.** Trechos Rodoviários:
+```bash
+shp2pgsql -c -g "geom" -s 4674 -i -I -t "2D" -W UTF-8 rod_trecho_rodoviario_l.shp public.trechos_rodoviarios > trechos_rodoviarios.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f trechos_rodoviarios.sql
+```
 
 
 **7.** Pedologia:
+```bash
+shp2pgsql -c -g "geom" -s 4674 -i -I -t "2D" -W UTF-8 pedologia_2017.shp public.pedologia > pedologia.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f pedologia.sql
+```
 
 
 **8.** Biomas:
+```bash
+shp2pgsql -c -g "geom" -s 4674 -i -I -t "2D" -W UTF-8 biomas.shp public.biomas > biomas.sql
+
+psql -U postgres -h localhost -p 5432 -d bdgeo -f biomas.sql
+```
  
 
 ## Consultas
@@ -77,6 +112,9 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f municipios.sql
 
 **1.** Qual UF encontra-se na localização de longitude `-44.29` e latitude `-18.61`?
 ```sql
+SELECT *
+  FROM uf
+ WHERE ST_Contains( geom, ST_GeomFromText( 'POINT(-44.29 -18.61)', 4674 ) );
 ```
 
 
@@ -89,6 +127,19 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f municipios.sql
 - ymin: -12.90
 - ymax: -21.49
 ```sql
+SELECT *
+  FROM uf
+ WHERE ST_Intersects(
+           geom,
+           ST_MakeEnvelope( -54.23, -12.90, -43.89, -21.49, 4674 )
+       );
+```
+
+Veja também uma solução aproximada, usando apenas retângulos envolventes através do oeprador `&&`:
+```sql
+SELECT *
+  FROM uf
+ WHERE geom && ST_MakeEnvelope( -54.23, -12.90, -43.89, -21.49, 4674 );
 ```
 
 
@@ -99,6 +150,13 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f municipios.sql
 - longitude: -43.59
 - Latitude.: -20.32
 ```sql
+SELECT *
+  FROM municipios
+ WHERE ST_DWithin(
+           geom,
+           ST_GeomFromText('POINT(-43.59 -20.32)', 4674),
+           2.0
+       );
 ```
 
 
@@ -107,6 +165,11 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f municipios.sql
 
 **1.** Quais as áreas de terras indígenas no Estado do Tocantins?
 ```sql
+SELECT ti.*
+  FROM uf, 
+       terras_indigenas AS ti
+ WHERE ST_Intersects(uf.geom, ti.geom)
+   AND uf.nome = 'TOCANTINS';
 ```
 
 
