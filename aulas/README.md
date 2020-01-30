@@ -54,7 +54,9 @@
 
 
 - **Satellite Image Time Series (SITS):**
-  - Slides da Aula (pdf)
+  - [Slides da Aula (pdf)](./pdf/sits_presentation.pdf)
+
+  - [Trechos de Código da Aula (Markdown)](./md/sits.md)
 
 
 # Material Auxiliar
