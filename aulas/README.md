@@ -1,5 +1,8 @@
 # Aulas
 
+- **Imagens de Sensoriamento Remoto e Sistemas de Referência Espacial:**
+  - [Slides da Aula (pdf)](./pdf/curso_verao_2020_imagens.pdf)
+
 
 - **Evolução das Tecnologias de Bancos de Dados:**
   - [Slides da Aula (pdf)](./pdf/evolucao_bd.pdf)
@@ -33,6 +36,10 @@
 
 - **Geo Web Services:**
   - [Slides da Aula (pdf)](./pdf/geoweb.pdf)
+  
+  - [Preparação Ambiente - STAC](./md/stac.md)
+  
+  - [Jupyter Notebook - STAC](./ipynb/stac.ipynb)
 
 
 - **Sistemas de Bancos de Dados Matriciais:**
