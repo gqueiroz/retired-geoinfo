@@ -28,6 +28,8 @@ Esse repositório está sendo preparado para fornecer os materiais da trilha de 
 
 ## Software Livre - Instalação
 
+- [Satellite Image Time Series - SITS](sits/README.md)
+
 - [QGIS](qgis/README.md)
 
 - [Docker](docker/README.md)
