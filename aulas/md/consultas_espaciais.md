@@ -64,28 +64,28 @@ psql -U postgres -h localhost -p 5432 -d bdgeo -f unidades_conservacao.sql
 ```
 
 
-**4.** Focos de Queimada (2019):
+**4.** Focos de Queimada (2020):
 ```bash
-shp2pgsql -c -g "geom" -s 4326 -i -I -t "2D" -W UTF-8 focos_2019.shp public.focos_2019 > focos_2019.sql
+shp2pgsql -c -g "geom" -s 4326 -i -I -t "2D" -W UTF-8 focos_2020.shp public.focos_2020 > focos_2020.sql
 
-psql -U postgres -h localhost -p 5432 -d bdgeo -f focos_2019.sql
+psql -U postgres -h localhost -p 5432 -d bdgeo -f focos_2020.sql
 ```
 
 **Obs.:** 
 - Veja se o atributo com a data de observação (`datahora`) foi importado com o tipo correto: `TIMESTAMP WITHOUT TIME ZONE`. Caso não tenha sido, use o seguinte comando para acertar o tipo da coluna:
 ```sql
-ALTER TABLE focos_2019 ALTER COLUMN datahora TYPE TIMESTAMP WITHOUT TIME ZONE
+ALTER TABLE focos_2020 ALTER COLUMN datahora TYPE TIMESTAMP WITHOUT TIME ZONE
     USING datahora::timestamp without time zone;
 ```
 
 - Aproveite e crie um índice sobre a coluna com a data de observação:
 ```sql
-CREATE INDEX idx_focos_2019_datahora ON focos_2019(datahora);
+CREATE INDEX idx_focos_2020_datahora ON focos_2020(datahora);
 ```
 
 - Faça uma reprojeção das geometrias do foco:
 ```sql
-ALTER TABLE focos_2019 ALTER COLUMN geom TYPE GEOMETRY(POINT, 4674)
+ALTER TABLE focos_2020 ALTER COLUMN geom TYPE GEOMETRY(POINT, 4674)
     USING ST_Transform(geom, 4674);
 ```
 
@@ -209,19 +209,19 @@ SELECT ti.*
 ```
 
 
-**2.** Quantos focos de incêndio na vegetação foram detectados em Unidades de Conservação Estaduais do Estado do Tocantins em 2019?
+**2.** Quantos focos de incêndio na vegetação foram detectados em Unidades de Conservação Estaduais do Estado do Tocantins em 2020?
 
 Solução 1:
 ```sql
      SELECT ucs.nome AS nome,
              COUNT(*) AS total_focos
-        FROM focos_2019,
+        FROM focos_2020,
              unidades_conservacao AS ucs,
              uf
        WHERE uf.nome = 'TOCANTINS'
          AND ST_Intersects(uf.geom, ucs.geom)
          AND ucs.jurisdicao = 'Estadual'
-         AND ST_Contains(ucs.geom, focos_2019.geom)
+         AND ST_Contains(ucs.geom, focos_2020.geom)
     GROUP BY ucs.id, 
              ucs.nome
     ORDER BY total_focos DESC;
